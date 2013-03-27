@@ -26,6 +26,13 @@
 		A06375D71701020500C7066D /* FirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06375D51701020500C7066D /* FirstViewController_iPad.xib */; };
 		A06375DA1701020500C7066D /* SecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06375D81701020500C7066D /* SecondViewController_iPhone.xib */; };
 		A06375DD1701020500C7066D /* SecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06375DB1701020500C7066D /* SecondViewController_iPad.xib */; };
+		A06375E817010B9800C7066D /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A06375E517010B9800C7066D /* Common.m */; };
+		A06375E917010B9800C7066D /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A06375E717010B9800C7066D /* CustomButton.m */; };
+		A06375ED1701109400C7066D /* brain.m in Sources */ = {isa = PBXBuildFile; fileRef = A06375EC1701109400C7066D /* brain.m */; };
+		A06375EF170119C900C7066D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06375EE170119C900C7066D /* QuartzCore.framework */; };
+		A076092F17017CD700D4DD79 /* bg_calc.png in Resources */ = {isa = PBXBuildFile; fileRef = A076092D17017CD700D4DD79 /* bg_calc.png */; };
+		A076093017017CD700D4DD79 /* bg_calc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A076092E17017CD700D4DD79 /* bg_calc@2x.png */; };
+		A07609331701827200D4DD79 /* MasterpieceUniSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07609321701827200D4DD79 /* MasterpieceUniSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +61,16 @@
 		A06375D61701020500C7066D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController_iPad.xib; sourceTree = "<group>"; };
 		A06375D91701020500C7066D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPhone.xib; sourceTree = "<group>"; };
 		A06375DC1701020500C7066D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPad.xib; sourceTree = "<group>"; };
+		A06375E417010B9800C7066D /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = glossButton/Common.h; sourceTree = "<group>"; };
+		A06375E517010B9800C7066D /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = glossButton/Common.m; sourceTree = "<group>"; };
+		A06375E617010B9800C7066D /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = glossButton/CustomButton.h; sourceTree = "<group>"; };
+		A06375E717010B9800C7066D /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = glossButton/CustomButton.m; sourceTree = "<group>"; };
+		A06375EB1701109400C7066D /* brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = brain.h; path = brain/brain.h; sourceTree = "<group>"; };
+		A06375EC1701109400C7066D /* brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = brain.m; path = brain/brain.m; sourceTree = "<group>"; };
+		A06375EE170119C900C7066D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A076092D17017CD700D4DD79 /* bg_calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_calc.png; path = images/bg_calc.png; sourceTree = "<group>"; };
+		A076092E17017CD700D4DD79 /* bg_calc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_calc@2x.png"; path = "images/bg_calc@2x.png"; sourceTree = "<group>"; };
+		A07609321701827200D4DD79 /* MasterpieceUniSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MasterpieceUniSans.ttf; path = font/MasterpieceUniSans.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06375EF170119C900C7066D /* QuartzCore.framework in Frameworks */,
 				A06375AD1701020500C7066D /* UIKit.framework in Frameworks */,
 				A06375AF1701020500C7066D /* Foundation.framework in Frameworks */,
 				A06375B11701020500C7066D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +91,7 @@
 		A06375A01701020500C7066D = {
 			isa = PBXGroup;
 			children = (
+				A06375EE170119C900C7066D /* QuartzCore.framework */,
 				A06375B21701020500C7066D /* mmconverter */,
 				A06375AB1701020500C7066D /* Frameworks */,
 				A06375AA1701020500C7066D /* Products */,
@@ -100,16 +119,16 @@
 		A06375B21701020500C7066D /* mmconverter */ = {
 			isa = PBXGroup;
 			children = (
+				A07609311701823F00D4DD79 /* Fonts */,
+				A076092C17017CC500D4DD79 /* images */,
+				A06375EA1701108000C7066D /* brain */,
+				A06375E317010B8200C7066D /* glossButton */,
 				A06375BB1701020500C7066D /* AppDelegate.h */,
 				A06375BC1701020500C7066D /* AppDelegate.m */,
 				A06375C41701020500C7066D /* FirstViewController.h */,
 				A06375C51701020500C7066D /* FirstViewController.m */,
-				A06375C71701020500C7066D /* first.png */,
-				A06375C91701020500C7066D /* first@2x.png */,
 				A06375CB1701020500C7066D /* SecondViewController.h */,
 				A06375CC1701020500C7066D /* SecondViewController.m */,
-				A06375CE1701020500C7066D /* second.png */,
-				A06375D01701020500C7066D /* second@2x.png */,
 				A06375D21701020500C7066D /* FirstViewController_iPhone.xib */,
 				A06375D51701020500C7066D /* FirstViewController_iPad.xib */,
 				A06375D81701020500C7066D /* SecondViewController_iPhone.xib */,
@@ -131,6 +150,47 @@
 				A06375C21701020500C7066D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06375E317010B8200C7066D /* glossButton */ = {
+			isa = PBXGroup;
+			children = (
+				A06375E417010B9800C7066D /* Common.h */,
+				A06375E517010B9800C7066D /* Common.m */,
+				A06375E617010B9800C7066D /* CustomButton.h */,
+				A06375E717010B9800C7066D /* CustomButton.m */,
+			);
+			name = glossButton;
+			sourceTree = "<group>";
+		};
+		A06375EA1701108000C7066D /* brain */ = {
+			isa = PBXGroup;
+			children = (
+				A06375EB1701109400C7066D /* brain.h */,
+				A06375EC1701109400C7066D /* brain.m */,
+			);
+			name = brain;
+			sourceTree = "<group>";
+		};
+		A076092C17017CC500D4DD79 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A06375C71701020500C7066D /* first.png */,
+				A06375C91701020500C7066D /* first@2x.png */,
+				A06375CE1701020500C7066D /* second.png */,
+				A06375D01701020500C7066D /* second@2x.png */,
+				A076092D17017CD700D4DD79 /* bg_calc.png */,
+				A076092E17017CD700D4DD79 /* bg_calc@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		A07609311701823F00D4DD79 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A07609321701827200D4DD79 /* MasterpieceUniSans.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +256,9 @@
 				A06375D71701020500C7066D /* FirstViewController_iPad.xib in Resources */,
 				A06375DA1701020500C7066D /* SecondViewController_iPhone.xib in Resources */,
 				A06375DD1701020500C7066D /* SecondViewController_iPad.xib in Resources */,
+				A076092F17017CD700D4DD79 /* bg_calc.png in Resources */,
+				A076093017017CD700D4DD79 /* bg_calc@2x.png in Resources */,
+				A07609331701827200D4DD79 /* MasterpieceUniSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +273,9 @@
 				A06375BD1701020500C7066D /* AppDelegate.m in Sources */,
 				A06375C61701020500C7066D /* FirstViewController.m in Sources */,
 				A06375CD1701020500C7066D /* SecondViewController.m in Sources */,
+				A06375E817010B9800C7066D /* Common.m in Sources */,
+				A06375E917010B9800C7066D /* CustomButton.m in Sources */,
+				A06375ED1701109400C7066D /* brain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +389,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mmconverter/mmconverter-Prefix.pch";
 				INFOPLIST_FILE = "mmconverter/mmconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -334,7 +402,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mmconverter/mmconverter-Prefix.pch";
 				INFOPLIST_FILE = "mmconverter/mmconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -358,6 +428,7 @@
 				A06375E21701020500C7066D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
