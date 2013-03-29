@@ -91,7 +91,6 @@
 		A06375A01701020500C7066D = {
 			isa = PBXGroup;
 			children = (
-				A06375EE170119C900C7066D /* QuartzCore.framework */,
 				A06375B21701020500C7066D /* mmconverter */,
 				A06375AB1701020500C7066D /* Frameworks */,
 				A06375AA1701020500C7066D /* Products */,
@@ -109,6 +108,7 @@
 		A06375AB1701020500C7066D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A06375EE170119C900C7066D /* QuartzCore.framework */,
 				A06375AC1701020500C7066D /* UIKit.framework */,
 				A06375AE1701020500C7066D /* Foundation.framework */,
 				A06375B01701020500C7066D /* CoreGraphics.framework */,
