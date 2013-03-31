@@ -46,7 +46,7 @@
 
 #pragma mark - main brain function
 -(NSString*)push:(NSString *)digitAndNumber{
-    if((([self.inputData count]==0 || [self.inputData count]==2) && ![self isOperator:digitAndNumber]))
+    if(([self.inputData count]==0 || [self.inputData count]==2) && ![self isOperator:digitAndNumber])
     {
             if([digitAndNumber isEqualToString:@"."])
             {
@@ -76,6 +76,11 @@
         val = [val stringByAppendingString:digitAndNumber];
         [self.inputData replaceObjectAtIndex:room withObject:val];
         return val;
+    }else if([self.inputData count]==1  && [self isOperator:digitAndNumber]) //////<<<<<<<2>>>>>>>Operator
+    {
+        [self.inputData addObject:digitAndNumber];
+        return @"";
+        
     }else if ([self.inputData count]==3 && [self isOperator:digitAndNumber])
     {
         NSString* result = [self calculateTheResult:digitAndNumber];

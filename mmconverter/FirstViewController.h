@@ -38,8 +38,8 @@
     
 }
     
--(IBAction)showOnScreen:(id)sender;
--(IBAction)clear;
+-(IBAction)showOnScreen:(CustomButton*)sender;
+-(IBAction)clear:(CustomButton*)sender;
 
 
 @property (nonatomic,weak)IBOutlet UILabel* lblOperator;

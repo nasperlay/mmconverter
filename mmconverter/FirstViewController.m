@@ -11,7 +11,6 @@
 
 @interface FirstViewController()
 @property(nonatomic,strong)brain* calBrain;
-
 @end
 @implementation FirstViewController
 @synthesize button1=_button1;
@@ -77,74 +76,56 @@
     CGFloat col3= col2+width+spacingx;
     CGFloat col4= col3+width+spacingx;
     
-    self.button7 = [[CustomButton alloc]initWithText:@"7" target:self selector:@selector(buttonTapped:)];
+    self.button7 = [[CustomButton alloc]initWithText:@"7" target:self selector:@selector(showOnScreen:)];
     _button7.frame= CGRectMake(col1, row1, width, height);
     
-    self.button8 = [[CustomButton alloc]initWithText:@"8" target:self selector:@selector(buttonTapped:)];
+    self.button8 = [[CustomButton alloc]initWithText:@"8" target:self selector:@selector(showOnScreen:)];
     _button8.frame= CGRectMake(col2, row1, width, height);
     
-    self.button9 = [[CustomButton alloc]initWithText:@"9" target:self selector:@selector(buttonTapped:)];
+    self.button9 = [[CustomButton alloc]initWithText:@"9" target:self selector:@selector(showOnScreen:)];
     _button9.frame= CGRectMake(col3, row1, width, height);
     
-    self.button4 = [[CustomButton alloc]initWithText:@"4" target:self selector:@selector(buttonTapped:)];
+    self.button4 = [[CustomButton alloc]initWithText:@"4" target:self selector:@selector(showOnScreen:)];
     _button4.frame= CGRectMake(col1, row2, width, height);
     
-    self.button5 = [[CustomButton alloc]initWithText:@"5" target:self selector:@selector(buttonTapped:)];
+    self.button5 = [[CustomButton alloc]initWithText:@"5" target:self selector:@selector(showOnScreen:)];
     _button5.frame= CGRectMake(col2, row2, width, height);
     
-    self.button6 = [[CustomButton alloc]initWithText:@"6" target:self selector:@selector(buttonTapped:)];
+    self.button6 = [[CustomButton alloc]initWithText:@"6" target:self selector:@selector(showOnScreen:)];
     _button6.frame= CGRectMake(col3, row2, width, height);
     
-    self.button1 = [[CustomButton alloc]initWithText:@"1" target:self selector:@selector(buttonTapped:)];
+    self.button1 = [[CustomButton alloc]initWithText:@"1" target:self selector:@selector(showOnScreen:)];
     _button1.frame= CGRectMake(col1, row3, width, height);
     
-    self.button2 = [[CustomButton alloc]initWithText:@"2" target:self selector:@selector(buttonTapped:)];
+    self.button2 = [[CustomButton alloc]initWithText:@"2" target:self selector:@selector(showOnScreen:)];
     _button2.frame= CGRectMake(col2, row3, width, height);
     
-    self.button3 = [[CustomButton alloc]initWithText:@"3" target:self selector:@selector(buttonTapped:)];
+    self.button3 = [[CustomButton alloc]initWithText:@"3" target:self selector:@selector(showOnScreen:)];
     _button3.frame= CGRectMake(col3, row3, width, height);
     
-    self.button0 = [[CustomButton alloc]initWithText:@"0" target:self selector:@selector(buttonTapped:)];
+    self.button0 = [[CustomButton alloc]initWithText:@"0" target:self selector:@selector(showOnScreen:)];
     _button0.frame= CGRectMake(col1, row4, width*2, height);
     
-    self.buttonPoint = [[CustomButton alloc]initWithText:@"." target:self selector:@selector(buttonTapped:)];
+    self.buttonPoint = [[CustomButton alloc]initWithText:@"." target:self selector:@selector(showOnScreen:)];
     _buttonPoint.frame= CGRectMake(col3, row4, width, height);
-
-    self.buttonEquals = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonEqual.frame= CGRectMake(col4, row3, width, height*2);
     
-    self.buttonPlus = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonPlus.frame= CGRectMake(col4, row1, width, height*2);
-
-    self.buttonMultiply = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonMultiply.frame= CGRectMake(col2, row0, width, height);
-    
-    self.buttonDivide = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonDivide.frame= CGRectMake(col3, row0, width, height);
-    
-    self.buttonMinus = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonMinus.frame= CGRectMake(col4, row0, width, height);
-    
-    self.buttonClear = [[CustomButton alloc]initWithText:@"" target:self selector:@selector(buttonTapped:)];
-    _buttonClear.frame= CGRectMake(col1, row0, width, height);
-    
-    self.buttonEquals = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.075f saturation:0.9f brightness:0.96f] ;
+    self.buttonEquals = [[CustomButton alloc] initWithTextAndHSB:@"=" target:self selector:@selector(showOnScreen:) hue:0.075f saturation:0.9f brightness:0.96f] ;
 	_buttonEqual.frame = CGRectMake(col4,row3, width, height*2);
     
-	self.buttonPlus = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonPlus = [[CustomButton alloc] initWithTextAndHSB:@"+" target:self selector:@selector(showOnScreen:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonPlus.frame = CGRectMake(col4,row2, width, height);
-	self.buttonMinus = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonMinus = [[CustomButton alloc] initWithTextAndHSB:@"-" target:self selector:@selector(showOnScreen:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonMinus.frame = CGRectMake(col4,row1, width, height);
-	self.buttonMultiply = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonMultiply = [[CustomButton alloc] initWithTextAndHSB:@"*" target:self selector:@selector(showOnScreen:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonMultiply.frame = CGRectMake(col4,row0, width, height);
     
-	self.buttonDivide = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonDivide = [[CustomButton alloc] initWithTextAndHSB:@"/" target:self selector:@selector(showOnScreen:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonDivide.frame = CGRectMake(col3,row0, width, height);
-	self.buttonPlusminus = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonPlusminus = [[CustomButton alloc] initWithTextAndHSB:@"+/-" target:self selector:@selector(showOnScreen:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonPlusminus.frame = CGRectMake(col2,row0, width, height);
-	self.buttonClear = [[CustomButton alloc] initWithTextAndHSB:@"" target:self selector:@selector(buttonTapped:) hue:0.058f saturation:0.26f brightness:0.42f];
+	self.buttonClear = [[CustomButton alloc] initWithTextAndHSB:@"AC" target:self selector:@selector(clear:) hue:0.058f saturation:0.26f brightness:0.42f];
 	_buttonClear.frame = CGRectMake(col1,row0, width, height);
-    
+    /*
 
 
     [self.buttonClear setLabelWithText:@"AC" andSize:18.0f andVerticalShift:0.0f];
@@ -154,7 +135,7 @@
     [self.buttonPlusminus setLabelWithText:@"±" andSize:24.0f andVerticalShift:-2.0f];
     [self.buttonDivide setLabelWithText:@"/" andSize:24.0f andVerticalShift:-2.0f];
     [self.buttonEquals setLabelWithText:@"=" andSize:24.0f andVerticalShift:22.0f];
-    
+    */
     _buttonEqual.toggled=YES;
     
     self.buttons = [NSMutableArray arrayWithObjects:
@@ -182,7 +163,7 @@
         [self.view addSubview:button];
     }
     
-    
+   
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -192,23 +173,26 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)showOnScreen:(CustomButton *)sender{
-    NSString* res=[self.calBrain push:sender.titleLabel.text];
+
+
+-(IBAction)showOnScreen:(CustomButton*)sender{
+    NSString* res=[self.calBrain push:sender.label.text];
     if(res!=nil && ![res isEqualToString:@""]){
         self.txtScreen.text=res;
                                              
     }
                                          
-    if([self.calBrain isOperator:sender.titleLabel.text])
+    if([self.calBrain isOperator:sender.label.text])
     {
-        self.lblOperator.text=sender.titleLabel.text;
+        self.lblOperator.text=sender.label.text;
                                              
     }
+     
 }
     
--(IBAction)clear{
+-(IBAction)clear:(CustomButton*)sender{
     self.txtScreen.text=@"0";
-    //self.lblOperator.text=@"=";
+    self.lblOperator.text=@"=";
     [self.calBrain clear];
 }
 

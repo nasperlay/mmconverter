@@ -41,5 +41,7 @@
 - (id)initWithText:(NSString *)text target:(id)target selector:(SEL)selector;
 - (id)initWithTextAndHSB:(NSString *)text target:(id)target selector:(SEL)selector hue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness;
 - (void) setLabelWithText:(NSString *)text andSize:(float)size andVerticalShift:(float)shift;
+- (void) setToggled:(BOOL)toggled;
+- (void) setSelected:(BOOL)selected;
 
 @end

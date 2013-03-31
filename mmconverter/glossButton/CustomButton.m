@@ -28,7 +28,6 @@
 @synthesize buttonStyle = _buttonStyle;
 @synthesize label=_label;
 
-
 -(id) initWithCoder:(NSCoder *)aDecoder {
     if ((self = [super initWithCoder:aDecoder])) {
         self.opaque = NO;
@@ -250,7 +249,6 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     self.selected = YES;
-
     if (_invocation != nil) {
         if (!_pause) [_invocation invoke];
     }    
